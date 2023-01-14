@@ -1,0 +1,170 @@
+/* global styles */
+:root {
+    --primary-font: Work Sans;
+    --primary-color: #131313;
+    --paragraph-color: #727272;
+
+    --nav-color: #424242;
+    --bg-primary: #fff4e7;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: var(--primary-font);
+    /* border: 1px solid red; */
+}
+
+
+/* common styles */
+body {
+
+    background-color: var(--bg-primary);
+}
+
+
+
+/* header styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 87.5%;
+    margin: 0 auto;
+    align-items: center;
+    padding-top: 50px;
+}
+
+/* heading styles */
+.header-title {
+    font-weight: 700;
+    font-size: 45px;
+    font-family: var(--primary-font);
+}
+
+/* nav styles */
+.nav ul {
+    display: flex;
+    list-style: none;
+    font-weight: 500;
+    font-size: 18px;
+
+
+}
+
+.nav li {
+    padding-top: 13px;
+    padding-right: 60px;
+}
+
+.nav li:last-child {
+    padding-right: 0;
+}
+
+.nav a {
+    text-decoration: none;
+    color: var(--nav-color);
+}
+
+
+
+/* banner section */
+
+.banner-section {
+    margin-top: 102px;
+}
+
+.banner-info {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section-title {
+    font-weight: 700;
+    font-size: 64px;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.section-description {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--paragraph-color);
+    margin-top: 30px;
+    padding: 0;
+
+}
+
+.section-description::first-line {
+    text-indent: 0;
+}
+
+
+.btn-primary {
+    padding: 21px 24px 20px 25px;
+    color: #FFFFFF;
+    background: #FF900E;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 33px;
+    margin-bottom: 50px;
+    border: none;
+
+}
+
+/* banner image */
+.banner-img {
+    width: 87.5%;
+    margin: 0 auto;
+    margin-bottom: 45px;
+
+}
+
+.banner-img img {
+    width: 100%;
+}
+
+
+
+
+/* ===============
+feature section
+================== */
+.features {
+    /* background-color: #FFFFFF; */
+    /* height: 80vh; */
+    display: flex;
+    width: 80%;
+    align-items: center;
+    margin: 0 auto;
+    gap: 50px;
+    /* height: 80vh; */
+}
+
+.features-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+
+
+
+/* article section  */
+.articles-section {
+    display: flex;
+    margin: 0 auto;
+    gap: 54px;
+    margin-top: 130px;
+    width: 87.5%;
+}
+
+.article-container,
+.article-img-container {
+    width: 50%;
+}
+
+.article-img-container img {
+    width: 100%;
+}
