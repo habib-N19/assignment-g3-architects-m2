@@ -12,7 +12,7 @@
     padding: 0;
     margin: 0;
     font-family: var(--primary-font);
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 
 
@@ -22,6 +22,7 @@
     background-color: var(--bg-primary);
     padding-bottom: 45px;
     margin-bottom: 85px;
+    width: 100%;
 }
 
 .btn-primary {
@@ -45,7 +46,7 @@
 .header {
     display: flex;
     justify-content: space-between;
-    width: 87.5%;
+    max-width: 87.5%;
     margin: 0 auto;
     align-items: center;
     padding-top: 50px;
@@ -237,6 +238,16 @@ feature section
 
 }
 
+.num-btn-text {
+    font-weight: 700;
+    font-size: 65px;
+}
+
+.text-btn {
+    font-weight: 500;
+    font-size: 25px;
+}
+
 /* facts section */
 .facts-section {
     width: 87.5%;
@@ -367,7 +378,9 @@ feature section
 
 
 .sponsor-img {
+    filter: grayscale(90%);
     width: 100%;
+
 }
 
 
@@ -394,7 +407,6 @@ feature section
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
-    /* justify-content: center; */
     margin: 0 auto;
 }
 
@@ -448,9 +460,8 @@ feature section
     padding-left: 20px;
 }
 
-/* 
-/* footer section
-.footer {} */
+
+/* footer section */
 
 footer {
     margin: 0 auto;
@@ -509,4 +520,168 @@ footer .section-description {
 
 .copyright {
     margin-top: 20px;
+}
+
+/* =======================================================
+==========================================================
+                    Mid Size Devices 
+        from min-width of 768px to max-width of 992px  
+===========================================================
+===========================================================*/
+
+/* header area */
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+    .header {
+        margin: 0;
+    }
+
+    .nav ul {
+        flex-wrap: wrap;
+    }
+
+    .banner-img {
+        max-width: 80%;
+        margin: 0 auto;
+
+    }
+
+    .features {
+        flex-direction: column-reverse;
+        width: 90%;
+        align-items: center;
+        margin: 0 auto;
+        gap: 15px;
+
+    }
+
+    .features-images {
+        max-width: 80%;
+    }
+
+    .feature-info {
+        width: 80%;
+    }
+
+
+}
+
+/* nav bar */
+/* banner */
+/* features image  */
+/* feature articles  */
+/* facts area  */
+/* sponsor area  */
+/* blogs area  */
+/* footer area  */
+
+
+
+/* =======================================================
+==========================================================
+                    Mobile Devices
+        from Max-width of 767px 
+===========================================================
+===========================================================*/
+@media only screen and (max-width:668px) {
+    .header {
+        flex-direction: column;
+        max-width: 100%;
+
+    }
+
+    .nav ul {
+        flex-direction: column;
+    }
+
+    .nav li {
+        padding-top: 20px;
+        padding-right: 60px;
+    }
+
+    .features {
+        flex-direction: column-reverse;
+        max-width: 100%;
+        gap: 20px;
+        /* align-items: flex-start; */
+    }
+
+    .feature-info {
+        width: 80%;
+    }
+
+    .features-images {
+        grid-template-columns: 1fr;
+        max-width: 85%;
+    }
+
+    .articles-section {
+        flex-direction: column;
+    }
+
+    .article-container,
+    .article-img-container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .article-img-container .btn-primary {
+        position: relative;
+        top: 0;
+        /* right: 0; */
+        left: 50%;
+        transform: translateX(-50%);
+
+    }
+
+    .num-btn-text {
+        font-weight: 700;
+        font-size: 30px;
+    }
+
+    .text-btn {
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+
+    /* .facts-section {} */
+    .facts-container {
+        flex-direction: column;
+    }
+
+    .sponsor-img-container {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+
+    .blogs {
+        grid-template-columns: 1fr;
+    }
+
+    .blog {
+        flex-direction: column;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .blog-img,
+    .blog-info {
+        width: 90%;
+
+    }
+
+    .blog-img img {
+        width: 100%;
+        height: 80vh;
+    }
+
+    .blog-sub-title {
+        margin-top: 5px;
+    }
+
+    footer {
+        margin-top: 30px;
+    }
 }
